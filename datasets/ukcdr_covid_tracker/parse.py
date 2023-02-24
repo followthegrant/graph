@@ -2,12 +2,14 @@ import re
 from typing import Any
 
 import pandas as pd
+import requests
 from fingerprints import generate as fp
 from followthemoney.util import make_entity_id
 from nomenklatura.entity import CE
 from zavod import Zavod, init_context
 
-URL = "https://www.ukcdr.org.uk/wp-content/uploads/2022/12/COVID-19-Research-Project-Tracker-02-DEC-2022.xlsx"
+URL = "https://www.ukcdr.org.uk/covid-circle/covid-19-research-project-tracker/"
+FILE_URL = r".*(\/wp-content\/uploads/\d{4}\/\d{2}\/COVID-19-Research-Project-Tracker.*\.xlsx).*"
 
 
 def clean(value: Any) -> str | None:
@@ -145,7 +147,10 @@ def parse_row(context: Zavod, row: dict[str, Any]):
 
 
 def parse(context: Zavod):
-    data_path = context.fetch_resource("ukcdr_projects.xlsx", URL)
+    res = requests.get(URL)
+    url = re.search(FILE_URL, res.text).groups()[0]
+    url = "https://www.ukcdr.org.uk" + url
+    data_path = context.fetch_resource("ukcdr_projects.xlsx", url)
     df = pd.read_excel(data_path, "Funded Research Projects")
     df = df.rename(columns={c: str(c).strip() for c in df.columns})
     df = df.applymap(clean)
