@@ -160,7 +160,7 @@ def parse(context: Zavod):
         if ix and ix % 1_000 == 0:
             context.log.info("Parse row %d ..." % ix)
     if ix:
-        context.log.info("Parsed %d rows." % (ix + 1), url=URL)
+        context.log.info("Parsed %d rows." % (ix + 1), url=url)
 
 
 if __name__ == "__main__":
