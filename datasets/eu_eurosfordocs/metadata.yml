@@ -1,0 +1,16 @@
+name: eu_eurosfordocs
+title: EurosForDocs
+prefix: eu-efd
+country: eu
+summary: |
+  We listed sources of transparency across European countries: public
+  registries in countries with registration, voluntary disclosure documents
+  elsewhere. We extracted the data from these documents, unified the format,
+  and stored everything in a single database.
+resources:
+  - name: entities.ftm.json
+    url: https://data.followthegrant.org/eu_eurosfordocs/entities.ftm.json
+    mime_type: application/json+ftm
+publisher:
+  name: EurosForDocs
+  url: https://eurosfordocs.eu/

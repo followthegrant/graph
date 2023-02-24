@@ -1,0 +1,32 @@
+name: us_cms_openpayments
+title: CMS OpenPayments
+prefix: us-cms
+country: us
+summary: |
+  Open Payments is a national transparency program that collects and publishes
+  information about financial relationships between drug and medical device
+  companies (referred to as "reporting entities") and certain health care
+  providers (referred to as "covered recipients"). These relationships may
+  involve payments to providers for things including but not limited to
+  research, meals, travel, gifts or speaking fees.
+resources:
+  - name: entities.ftm.json
+    url: https://data.followthemoney.org/us_cms_openpayments/entities.ftm.json
+    mime_type: application/json+ftm
+publisher:
+  name: CMS - Centers for Medicare and Medicaid Services
+  description: |
+    The Centers for Medicare & Medicaid Services (CMS), is a federal agency
+    within the United States Department of Health and Human Services (HHS) that
+    administers the Medicare program and works in partnership with state
+    governments to administer Medicaid, the Children's Health Insurance Program
+    (CHIP), and health insurance portability standards. In addition to these
+    programs, CMS has other responsibilities, including the administrative
+    simplification standards from the Health Insurance Portability and
+    Accountability Act of 1996 (HIPAA), quality standards in long-term care
+    facilities (more commonly referred to as nursing homes) through its survey
+    and certification process, clinical laboratory quality standards under the
+    Clinical Laboratory Improvement Amendments, and oversight of
+    HealthCare.gov. CMS was previously known as the Health Care Financing
+    Administration (HCFA) until 2001.
+  url: https://openpaymentsdata.cms.gov/

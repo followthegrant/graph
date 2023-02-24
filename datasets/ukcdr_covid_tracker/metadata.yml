@@ -1,0 +1,24 @@
+name: ukcdr_covid_tracker
+title: COVID-19 Research Project Tracker by UKCDR & GloPID-R
+prefix: ukcdr
+summary: |
+  This is a live database of funded research projects across the world related
+  to the current COVID-19 pandemic, as part of the COVID CIRCLE initiative. By
+  providing an overview of research projects mapped against the priorities
+  identified in the WHO Coordinated Global Research Roadmap: 2019 Novel
+  Coronavirus, we support funders and researchers to deliver a more effective
+  and coherent global research response. To our knowledge it is one of the most
+  comprehensive databases, covering a wide breadth of research disciplines.
+resources:
+  - name: entities.ftm.json
+    url: https://data.ftm.store/followthegrant/ukcdr_covid_tracker/entities.ftm.json
+    mime_type: application/json+ftm
+publisher:
+  name: UK Collaborative on Development Research
+  description: |
+    Through mapping and bringing together key players, UKCDR provides a coherent
+    picture of the UK’s spend on international development research. Doing so, we
+    hope to harness the true power of UK-funded research to address the major
+    challenges that confront our evolving world.
+  url: https://www.ukcdr.org.uk/
+  country: gb

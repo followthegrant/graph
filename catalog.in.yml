@@ -1,0 +1,6 @@
+datasets:
+  - include: https://data.followthegrant.org/uk_disclosure/index.json
+  - include: https://data.followthegrant.org/eu_eurosfordocs/index.json
+  - include: https://data.followthegrant.org/de_eurosfueraerzte/index.json
+  - include: https://data.followthegrant.org/us_cms_openpayments/index.json
+  - include: https://data.ftm.store/ror/index.json

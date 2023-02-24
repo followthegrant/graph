@@ -1,0 +1,18 @@
+name: de_eurosfueraerzte
+title: Euros für Ärzte
+prefix: de-efa
+country: de
+summary: |
+  German data about payments from the pharma industry based on the database
+  publications by CORRECTIV and Der Spiegel
+resources:
+  - name: entities.ftm.json
+    url: https://data.followthegrant.org/de_eurosfueraerzte/entities.ftm.json
+    mime_type: application/json+ftm
+publisher:
+  name: CORRECTIV
+  description: |
+    CORRECTIV is a non-profit independent newsroom. Through investigative
+    journalism, we expose systematic abuses, hold those in power accountable
+    and strengthen an open and democratic civil society.
+  url: https://correctiv.org/

@@ -1,0 +1,23 @@
+name: uk_disclosure
+title: Disclosure UK
+prefix: uk-abpi
+country: gb
+summary: |
+  The Research Organization Registry (ROR) includes IDs and metadata for more
+  than 102,000 organizations and counting. Registry data is CC0 and openly
+  available via a search interface, REST API, and data dump. Registry updates
+  are curated through a community process and released on a rolling basis.
+resources:
+  - name: entities.ftm.json
+    url: https://data.followthemoney.org/uk_disclosure/entities.ftm.json
+    mime_type: application/json+ftm
+publisher:
+  name: The Association of the British Pharmaceutical Industry
+  description: |
+    The Association of the British Pharmaceutical Industry (ABPI) is the trade
+    association for over 120 companies in the UK producing prescription
+    medicines for humans, founded in 1891. It is the British equivalent of
+    America's PhRMA; however, the member companies research, develop,
+    manufacture and supply 80% of the medicines prescribed through the National
+    Health Service.
+  url: https://www.abpi.org.uk/
