@@ -8,7 +8,7 @@ on:
 jobs:
   data:
     runs-on: ubuntu-latest
-    container: ghcr.io/investigativedata/graph-etl:main
+    container: ghcr.io/followthegrant/graph-etl:main
     defaults:
       run:
         working-directory: /graph/datasets/{{ dataset }}
