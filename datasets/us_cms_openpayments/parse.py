@@ -1,5 +1,6 @@
 import csv
 import io
+import sys
 from typing import Any, Generator, Literal
 from zipfile import ZipFile
 
@@ -407,9 +408,12 @@ def stream_csv(stream: csv.reader) -> Generator[Data, None, None]:
         yield dict(zip(columns, row))
 
 
-def parse(context: Zavod):
+def parse(context: Zavod, prefix: str | None = None):
     data_src = context.get_resource_path("src")
     for data_path in data_src.glob("*.ZIP"):
+        if prefix is not None and not data_path.name.startswith(prefix):
+            continue
+
         with ZipFile(data_path, "r") as zf:
             for name in zf.namelist():
                 if name.endswith("csv"):
@@ -435,5 +439,8 @@ def parse(context: Zavod):
 
 if __name__ == "__main__":
     with init_context("metadata.yml", sink_type="ftmstore") as context:
+        prefix = None
+        if len(sys.argv) > 1:
+            prefix = sys.argv[1]
         context.export_metadata("export/index.json")
-        parse(context)
+        parse(context, prefix)
