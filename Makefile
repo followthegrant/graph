@@ -11,4 +11,6 @@ publish: catalog
 	mkdir -p ./.github/workflows/
 	sed "s/{{ dataset }}/$*/" workflow.tmpl > ./.github/workflows/$*.yml
 
-workflows: .github/workflows/ukcdr_covid_tracker.yml
+workflows: \
+	.github/workflows/ukcdr_covid_tracker.yml \
+	.github/workflows/pubmed.yml

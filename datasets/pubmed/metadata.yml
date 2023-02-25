@@ -1,0 +1,22 @@
+name: pubmed
+title: PubMed Central Open Access Subset
+prefix: pmc
+country: xx
+summary: |
+  The PMC Open Access Subset includes millions of journal articles and
+  preprints that are made available under license terms that allow reuse. Not
+  all articles in PMC are available for text mining or other reuse; many are
+  under copyright. Articles in the PMC Open Access Subset are made available
+  under Creative Commons or similar licenses that allow more liberal
+  redistribution and reuse than a traditionally copyrighted work. The PMC Open
+  Access Subset is one part of the PMC Article Datasets.
+resources:
+  - name: entities.ftm.json
+    url: https://data.followthemoney.org/pubmed/entities.ftm.json
+    mime_type: application/json+ftm
+publisher:
+  name: The National Center for Biotechnology Information
+  description: |
+    The National Center for Biotechnology Information advances science and
+    health by providing access to biomedical and genomic information.
+  url: https://www.ncbi.nlm.nih.gov
