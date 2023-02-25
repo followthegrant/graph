@@ -1,0 +1,22 @@
+name: europepmc
+title: PubMed Central Open Access Subset
+prefix: pmc
+country: xx
+summary: |
+  Europe PMC provides comprehensive access to life sciences literature from
+  trusted sources. It's available to anyone, anywhere for free. With Europe PMC
+  you can search and read 41.9 million publications, preprints and other
+  documents enriched with links to supporting data, reviews, protocols, and
+  other relevant resources.
+resources:
+  - name: entities.ftm.json
+    url: https://data.followthemoney.org/europepmc/entities.ftm.json
+    mime_type: application/json+ftm
+publisher:
+  name: European Bioinformatics Institute (EMBL-EBI)
+  description: |
+    EMBL-EBI is international, innovative and interdisciplinary, and a champion
+    of open data in the life sciences. We are part of the European Molecular
+    Biology Laboratory (EMBL), an intergovernmental research organisation
+    funded by over 20 member states, prospect and associate member states.
+  url: https://www.ebi.ac.uk
